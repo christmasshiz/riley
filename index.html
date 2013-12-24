@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Riley Billings</title>
+
+    <style>
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 85pt;
+  background-color: #3498db;
+  text-align: center;
+  line-height: 1.2em;
+  padding-top: 70px;
+}
+
+.dashed-shadow {
+  position: relative;
+  top: 8px;
+  left: 8px;
+  display: inline-block;
+  color: #17699e;
+}
+
+@keyframes dash-animation {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.dashed-shadow:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  bottom: -2px;
+  right: -2px;
+  z-index: 1;
+  background-image: -webkit-linear-gradient(45deg, #3498db 12.5%, rgba(52, 152, 219, 0) 12.5%, rgba(52, 152, 219, 0) 37.5%, #3498db 37.5%, #3498db 62.5%, rgba(52, 152, 219, 0) 62.5%, rgba(52, 152, 219, 0) 87.5%, #3498db 87.5%);
+  background-image: -moz-linear-gradient(45deg, #3498db 12.5%, rgba(52, 152, 219, 0) 12.5%, rgba(52, 152, 219, 0) 37.5%, #3498db 37.5%, #3498db 62.5%, rgba(52, 152, 219, 0) 62.5%, rgba(52, 152, 219, 0) 87.5%, #3498db 87.5%);
+  background-image: -o-linear-gradient(45deg, #3498db 12.5%, rgba(52, 152, 219, 0) 12.5%, rgba(52, 152, 219, 0) 37.5%, #3498db 37.5%, #3498db 62.5%, rgba(52, 152, 219, 0) 62.5%, rgba(52, 152, 219, 0) 87.5%, #3498db 87.5%);
+  background-image: linear-gradient(45deg, #3498db 12.5%, rgba(52, 152, 219, 0) 12.5%, rgba(52, 152, 219, 0) 37.5%, #3498db 37.5%, #3498db 62.5%, rgba(52, 152, 219, 0) 62.5%, rgba(52, 152, 219, 0) 87.5%, #3498db 87.5%);
+  background-size: 6px 6px;
+}
+
+.dashed-shadow:hover:before {
+  animation: dash-animation 30s infinite linear;
+}
+
+.dashed-shadow:after {
+  z-index: 2;
+  content: attr(data-text);
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  color: #ecf0f1;
+  text-shadow: 3px 3px #3498db;
+}
+
+.hello {
+  font-family: 'Cookie',cursive;
+  font-size: 140pt;
+}
+
+.sorta-block {
+  font-size: 50pt;
+  line-height: 1.1em;
+  -webkit-transform: skew(0, -5deg);
+  -moz-transform: skew(0, -5deg);
+  -ms-transform: skew(0, -5deg);
+  -o-transform: skew(0, -5deg);
+  transform: skew(0, -5deg);
+  z-index: 3;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.sorta {
+  border-top: 4px solid #ecf0f1;
+  border-bottom: 4px solid #ecf0f1;
+  text-transform: uppercase;
+  z-index: 3;
+  font-style: italic;
+}
+
+.hipsterish {
+  font-family: 'Sancreek', cursive;
+  font-size: 70pt;
+}
+
+.dashed-shadow-text {
+  font-size: 140pt;
+  line-height: 0.7em;
+}
+
+.shadow {
+  font-size: 120pt;
+  line-height: 0.8em;
+}
+
+.instagram {
+  width: 330px;
+  margin-top: 50px;
+  /*box-shadow: 7px 7px 0px #17699e;*/
+}
+
+</style>
+
+  <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sancreek' rel='stylesheet' type='text/css'>
+
+<div data-text="Riley Mae Billings" class="dashed-shadow">Riley Mae Billings</div> <br />
+<a href="http://instagram.com/rileybillings"><img class="instagram" src="images/instagram.png"/></a>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
